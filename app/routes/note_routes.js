@@ -17,7 +17,7 @@ module.exports = function(app, db) {
     db.collection('cats').find().toArray((err, result) => {
       if (err) return console.log(err)
       // renders index.ejs
-      res.render('lab.ejs', {cats: result})
+      res.render('index.ejs', {cats: result})
     })
   })
 
