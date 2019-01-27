@@ -9,14 +9,14 @@
 <br/>
 <form action="/cats" method="POST">
   <input type="text" placeholder="Enter name of a cat" name="name">
-  <input type="text" placeholder="Quality of the cat" name="quote">
+  <input type="text" placeholder="Quality of the cat" name="cat_qual">
   <button type="submit">Add cat</button>
 
   <ul class="cats">
     <% for(var i=0; i<cats.length; i++) {%>
       <li class="cat">
         <span><%= cats[i].name %>:</span>
-        <span><%= cats[i].quote %></span>
+        <span><%= cats[i].cat_qual %></span>
       </li>
     <% } %>
     </ul>

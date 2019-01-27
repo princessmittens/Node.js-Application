@@ -11,7 +11,7 @@ MongoClient.connect(dblk, (err, database) => {
     db = database.db("lab1")
     require('./app/routes')(app, database);
     
-    app.listen(process.env.PORT || 5000, () => {
+    app.listen(process.env.PORT || 3000, () => {
       console.log('We are live on ' + port);
     });               
   })
