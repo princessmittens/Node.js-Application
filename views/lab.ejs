@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 1: Cloud</title>
+</head>
+<body>
+<h3>Welcome to lab 1 of cloud computing</h3> 
+<br/>
+<form action="/cats" method="POST">
+  <input type="text" placeholder="Enter name of a cat" name="name">
+  <input type="text" placeholder="Quality of the cat" name="quote">
+  <button type="submit">Add cat</button>
+
+  <ul class="cats">
+    <% for(var i=0; i<cats.length; i++) {%>
+      <li class="cat">
+        <span><%= cats[i].name %>:</span>
+        <span><%= cats[i].quote %></span>
+      </li>
+    <% } %>
+    </ul>
+
+    </ul>
+  </form>
+</body>
+</html>
