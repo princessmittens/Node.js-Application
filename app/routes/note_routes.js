@@ -1,7 +1,5 @@
 
 module.exports = function(app, db) {
-
-
   
   app.post('/cats', (req, res) => {
     db.collection('cats').save(req.body, (err, result) => {
